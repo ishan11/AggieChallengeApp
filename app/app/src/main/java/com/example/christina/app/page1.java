@@ -67,4 +67,5 @@ public class page1 extends AppCompatActivity {
     }
 
     //Testing of GitHub pushing
+    //Test
 }

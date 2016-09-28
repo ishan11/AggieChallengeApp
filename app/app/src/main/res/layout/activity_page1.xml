@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.christina.app.page1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Welcome!"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imagebutton_contacts"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/contactbutton"
+        android:layout_alignBottom="@+id/imagebutton_status"
+        android:layout_toStartOf="@+id/imageButton_log"
+        android:layout_toLeftOf="@+id/imageButton_log" />
+    <ImageButton
+        android:layout_width="175dp"
+        android:layout_height="140dp"
+        android:id="@+id/imagebutton_status"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/status"
+        android:layout_toEndOf="@+id/imagebutton_contacts"
+        android:layout_toRightOf="@+id/imagebutton_contacts" />
+
+    <ImageButton
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_log"
+        android:src="@drawable/seizurelog"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton_eeg"
+        android:src="@drawable/eeg"
+        android:layout_alignBottom="@+id/imageButton_log"
+        android:layout_alignRight="@+id/imagebutton_contacts"
+        android:layout_alignEnd="@+id/imagebutton_contacts"
+        android:layout_alignTop="@+id/imageButton_log"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
